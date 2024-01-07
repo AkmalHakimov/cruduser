@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+    <title>Just Crud</title>
+</head>
+<body class="p-5" >
+    
+    <div id="box" style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+        <div style="width: 900px;">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="password" >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Firstname</label>
+                  <input type="text" class="form-control" id="first_name">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Lastname</label>
+                  <input type="text" class="form-control" id="last_name" >
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="city">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="select" class="form-control">
+                      <option disabled selected>Choose...</option>
+                      <option value="Bukhara">Bukhara</option>
+                      <option value="Tashkent">Tashkent</option>
+                      <option value="Andijan">Andijan</option>
+                      <option value="Fergana">Fergana</option>
+                      <option value="Samarkand">Samarkand</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="zip">
+                  </div>
+                </div>
+                    <input type="radio" id="radio_female" name="fav_language" value="CSS">
+                    <label for="css">Male</label><br>
+                    <input type="radio" id="radio_female" name="fav_language" value="JavaScript">
+                    <label for="javascript">Female</label>    
+              </form>
+              <button onclick="onClikcSave()" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Gender</th>
+                <th>Delete</th>
+                <th>Edite</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    
+
+    <script src="./index.js" ></script>
+</body>
+</html>
